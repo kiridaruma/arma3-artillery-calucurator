@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "elm-live": "^4.0.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "version": "1.0.0",
+  "description": "arma3 arty calucurator",
+  "name": "artillery-calucurator",
+  "scripts": {
+    "serve": "elm-live src/Main.elm -d ./dist/ -- --output=dist/app.js",
+    "make": "npm run make:dev",
+    "make:dev": "elm make src/Main.elm --output=dist/app.js --debug",
+    "make:prod": "elm make src/Main.elm --output=dist/app.js --optimize"
+  }
+}
